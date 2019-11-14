@@ -1,4 +1,5 @@
 <?php 
+	include 'connection.php';
 	include 'navbar.php';
 
 ?><!DOCTYPE html>
@@ -66,7 +67,7 @@
             <h1 style="text-align: left; font-size: 35px; font-family: Lucida Console;
 ">Library Management System</h1><br>
             <h1 style="text-align: left; font-size: 25px;">User Registration</h1><br>
-            <form name="Registration" action="" method="">
+            <form name="Registration" action="" method="POST">
                 <br><br>
                 <div class="login">
                     <input type="text" name="first" placeholder="First Name" required=""><br><br>
@@ -75,6 +76,7 @@
                     <input type="password" name="password" placeholder="password" required=""><br><br>
                     <input type="text" name="roll" placeholder="Roll No." required=""><br><br>
                     <input type="text" name="email" placeholder="Email Address" required=""><br><br>
+                    <input type="text" name="contact" placeholder="Phone Number" required=""><br><br>
                     <input class="btn btn-default" type="submit" name="submit" value="Sign Up" style="color: blue; width: 70px; height: 30px"></div>
             </form>
 

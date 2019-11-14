@@ -1,3 +1,6 @@
+<?php 
+	include 'connection.php';
+?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -112,7 +115,7 @@
                     <br><br><br>
                     <h1 style= "text-align: center" > Welcome To Our Library</h1><br>
                     <h1 style="text-align: center "> Opens at 9 am </h1><br>
-                    <h2 style="text-align: center"> Closes at 15:00 </h2><br>
+                    <h2 style="text-align: center"> Closes at 10 pm </h2><br>
                     <h1> </h1>
                 </div>
                 </div>
