@@ -114,7 +114,7 @@
         <h1 style="text-align: left; font-size: 35px; font-family: Lucida Console;
 ">Online Library Management System</h1><br>
         <h1 style="text-align: left; font-size: 25px;">Log in To Continue</h1><br>
-        <form name="login" action="" method="">
+        <form name="login" action="" method="POST">
             <div class="login">
             <input class="'form-control" type="text" name="username" placeholder="Username" required=""><br><br>
             <input  type="password" name="Password" placeholder="password" required=""><br><br>
@@ -128,6 +128,41 @@
     </div>
 
 </section>
+
+<?php 
+	if (isset($_POST['submit'])){
+		$count=0;
+		$res=mysqli_query($db, "SELECT * FROM 'student' WHERE username='$_POST[username]' && password='$_POST[password]' ;");
+		/*count rows inserted in the login form  */
+		$count=mysqli_num_rows($res);
+		
+		if($count==0)
+		{
+			?>
+			<script type="text/javascript">
+				alert("The username and password does not match.");
+			</script>
+			
+				
+			<?php 
+			
+		}
+		/* count not 0 direct to another index*/
+		else{
+		
+		}?>
+				<!-- <script type="text/javascript">
+				window.location="index.php"
+				</script>
+				-->
+		<div class="alert alert-warning" style="width:700px; margin-left:300px; background-color: white">
+			<strong> The Username Does Not Exist</strong>
+		</div>
+		<?php 
+			
+	}
+
+?>
 
 </body>
 </html>
