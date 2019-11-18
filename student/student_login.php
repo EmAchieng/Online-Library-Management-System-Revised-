@@ -155,7 +155,7 @@
 				window.location="index.php"
 				</script>
 				-->
-		<div class="alert alert-warning" style="width:700px; margin-left:300px; background-color: white">
+		<div class="alert alert-warning" style="width:700px; margin-left:300px; background-color: #de1313; color: white">
 			<strong> The Username Does Not Exist</strong>
 		</div>
 		<?php 
