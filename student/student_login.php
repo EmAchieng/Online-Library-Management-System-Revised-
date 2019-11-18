@@ -19,6 +19,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     <style>
+    	
         section {
             margin-top: -20px;
         }
@@ -47,7 +48,7 @@
     </style>
 </head>
 <body>
-<!--  coding is in the navbar
+<!--  code is in the navbar
 
     <nav class="navbar navbar-inverse">
     <div class="scrollmenu">
@@ -89,7 +90,7 @@
                             var i;
                             var x= document.getElementsByClassName("mySlides");
 
-                            //displays number of image
+                            //displays number of images
                             //one image shows; other none
                             //document.write(x.length);
                             for (i=0; i<x.length; i++) {
@@ -122,7 +123,7 @@
     <p style="color: white; padding-left: 15px">
         <br><br>
         <a style="color: #cccccc"> Forgot Password? </a> &nbsp &nbsp &nbsp &nbsp &nbsp
-        New To This Site? &nbsp &nbsp &nbsp &nbsp &nbsp <a style="color:white;" href="registration.html"> Sign Up</a>
+        New To This Site? &nbsp &nbsp &nbsp &nbsp &nbsp <a style="color:white;" href="registration.php"> Sign Up</a>
     </p>
     </div>
 

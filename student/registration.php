@@ -76,13 +76,66 @@
                     <input type="password" name="password" placeholder="password" required=""><br><br>
                     <input type="text" name="roll" placeholder="Roll No." required=""><br><br>
                     <input type="text" name="email" placeholder="Email Address" required=""><br><br>
-                    <input type="text" name="contact" placeholder="Phone Number" required=""><br><br>
+                    <input type="text" name="contact" placeholder="Contact" required=""><br><br>
                     <input class="btn btn-default" type="submit" name="submit" value="Sign Up" style="color: blue; width: 70px; height: 30px"></div>
             </form>
 
         </div>
 
     </section>
+    <?php 
+    	if (isset($_POST['submit']))
+    	{
+    		/* variables */
+    		$count=0;
+    		$sql="SELECT username FROM student ";
+    		$res=mysqli_query($db, $sql);
+    		
+    		
+    		/* loop */
+    		/*fetch username one by one  */
+    		/*  runs n times*/
+    		
+    		while($row=mysqli_fetch_assoc($res)) {
+    			/* if username is same */
+    			if($row['username'] ==$_POST['username'])
+    			/*  increment count variable to next*/
+    			{
+    				$count=$count+1;
+    			}
+    			
+    		}
+    		/* else if same name not found in table */
+    		if($count=0)
+    		
+    		{mysqli_query($db, "INSERT INTO student VALUES(); ('$_POST[first]', '$_POST[last]', '$_POST[username]','$_POST[password]', '$_POST[roll]', '$_POST[email]', '$_POST[contact]'  )");
+    	?>
+    	
+    	<script type="text/javascript">
+    		alert("Registration Successful");
+    		
+
+    	</script>
+    	<?php 
+    		}
+    		/*count variable is not 0 ie username with the same name */
+    		/* don't register another user with same name */
+    	else{
+    		?>
+    		    	
+    		    	<script type="text/javascript">
+    		    		alert("Username already exists. ");
+    		    		
+    		
+    		    	</script>
+    		    	<?php 
+    		
+    		
+    	
+    	}
+    	}
+    
+    ?>
 
 </section>
 </body>

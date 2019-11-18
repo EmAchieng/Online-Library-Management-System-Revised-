@@ -1,10 +1,4 @@
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
+
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -87,7 +81,7 @@ table {
     border-spacing:0;
 }
 
-/* change border colour to suit your needs */
+/* change border colour to suit  needs */
 hr {
     display:block;
     height:1px;
@@ -176,9 +170,12 @@ section .sec_img {
     opacity: 7;
     color: white;
     padding: 20px;
+    display: block;
+    
 
 }
-/*nav {
+/*
+nav {
     float: right;
     word-spacing: 30px;
     padding: 20px;
@@ -189,6 +186,7 @@ nav li {
     line-height: 80px;
 }
 */
+
 
 .log_img {
     background-image: url("images/pages.jpg");
@@ -214,9 +212,10 @@ input {
 .box2 {
     height: 589px;
     width: 400px;
-    background-color: black;
+   background-color: black;
     margin: 0px auto;
     opacity: 7;
     color: white;
     padding: 20px;
+    display: block;
 }
