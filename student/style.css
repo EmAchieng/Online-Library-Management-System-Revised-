@@ -100,26 +100,27 @@ input, select {
 .wrapper {
     height: 660px;
     width : 1350px;
-    background-color: grey;
+    background-color: red;
   
     /*background-color: darkred;*/
 }
 
 header {
-    height : 100px;
+    height : 130px;
     width: 1350px;
     background-color: black;
+    padding: 10px;
 }
 
 section {
-    height : 450px;
-    width: 1350px;
+    height : 550px;
+    width: 1361px;
     background-color: grey;
 
 }
 footer {
-    height : 80px;
-    width: 1350px;
+    height : 82px;
+    width: 1361px;
     background-color: black;
 }
 .logo
@@ -130,14 +131,19 @@ footer {
 
 }
 .logo image {
-    padding-left: 50px;
+    padding-left: 80px;
 
 }
 li a {
     color: navajowhite;
+    text-decoration: none;
 }
 
-
+nav li {
+	display: inline-block;
+	line-height: 80px;
+	
+}
 section .sec_img {
      background-image: url("images/library1.jpeg");
      height: 550px;
@@ -151,7 +157,9 @@ section .sec_img {
     height : 400px;
     width: 450px;
     background-color: lightgrey;
-    margin: 20px auto;
+    margin: 70px auto;
+    opacity: .6;
+    color: white;
 
 }
 .box h1 {
@@ -167,7 +175,7 @@ section .sec_img {
     width: 450px;
     background-color: black;
     margin: 70px auto;
-    opacity: 7;
+    opacity: .7;
     color: white;
     padding: 20px;
     display: block;
@@ -196,11 +204,11 @@ nav li {
 }
 
 form .login {
-    margin: 20px auto 70px;
+    margin: auto 50px;
 }
 input {
-    height : 20px;
-    width: 100px;
+    height : 25px;
+    width: 300px;
 }
 /*--------------------------------------registration------------------------------------------------*/
 
@@ -212,9 +220,9 @@ input {
 .box2 {
     height: 589px;
     width: 400px;
-   background-color: black;
+    background-color: black;
     margin: 0px auto;
-    opacity: 7;
+    opacity: .7;
     color: white;
     padding: 20px;
     display: block;

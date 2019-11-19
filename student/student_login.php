@@ -45,6 +45,9 @@
         body {
             background-image: url("images/latemigrations.jpg");
         }
+        section {
+        	margin-top: -20px;
+        }
     </style>
 </head>
 <body>
@@ -116,8 +119,8 @@
         <h1 style="text-align: left; font-size: 25px;">Log in To Continue</h1><br>
         <form name="login" action="" method="POST">
             <div class="login">
-            <input class="'form-control" type="text" name="username" placeholder="Username" required=""><br><br>
-            <input  type="password" name="Password" placeholder="password" required=""><br><br>
+            <input class="form-control" type="text" name="username" placeholder="Username" required=""><br><br>
+            <input class="form-control" type="password" name="Password" placeholder="password" required=""><br><br>
             <input class="btn btn-default" type="submit" name="submit" value="Login" style="color: blue; width: 70px; height: 30px"> </div>
         </form>
     <p style="color: white; padding-left: 15px">
@@ -132,37 +135,34 @@
 <?php 
 	if (isset($_POST['submit'])){
 		$count=0;
-		$res=mysqli_query($db, "SELECT * FROM 'student' WHERE username='$_POST[username]' && password='$_POST[password]' ;");
+		$res=mysqli_query($db,"SELECT * FROM `student` WHERE username='$_POST[username]' && password='$_POST[password]';");
 		/*count rows inserted in the login form  */
 		$count=mysqli_num_rows($res);
 		
 		if($count==0)
-		{
-			?>
-			<script type="text/javascript">
-				alert("The username and password does not match.");
-			</script>
-			
-				
-			<?php 
-			
-		}
-		/* count not 0 direct to another index*/
-		else{
-		
-		}?>
-				<!-- <script type="text/javascript">
-				window.location="index.php"
-				</script>
-				-->
-		<div class="alert alert-warning" style="width:700px; margin-left:300px; background-color: #de1313; color: white">
-			<strong> The Username Does Not Exist</strong>
-		</div>
-		<?php 
-			
-	}
+      {
+        ?>
+              <!--
+              <script type="text/javascript">
+                alert("The username and password don't match.");
+              </script> 
+              -->
+          <div class="alert alert-warning" style="width: 600px; margin-left: 370px; background-color: #de1313; color: white">
+            <strong>The username and password don't match</strong>
+          </div>    
+        <?php
+      }
+      else
+      {
+        ?>
+          <script type="text/javascript">
+            window.location="index.php"
+          </script>
+        <?php
+      }
+    }
 
-?>
+  ?>
 
 </body>
 </html>

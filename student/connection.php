@@ -1,4 +1,5 @@
 <?php
+	/*server name, username, password, database name  */
 	$db = mysqli_connect("localhost", "root", "", "library");
 	
 	

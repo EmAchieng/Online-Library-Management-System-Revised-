@@ -47,6 +47,10 @@
         body {
             background-image: url("images/library1.jpeg");
         }
+        
+        section {
+        	margin-top: -20px;
+        }
     </style>
 </head>
 <body>
@@ -68,15 +72,14 @@
 ">Library Management System</h1><br>
             <h1 style="text-align: left; font-size: 25px;">User Registration</h1><br>
             <form name="Registration" action="" method="POST">
-                <br><br>
                 <div class="login">
-                    <input type="text" name="first" placeholder="First Name" required=""><br><br>
-                    <input type="text" name="last" placeholder="Last Name" required=""><br><br>
-                    <input type="text" name="username" placeholder="Username" required=""><br><br>
-                    <input type="password" name="password" placeholder="password" required=""><br><br>
-                    <input type="text" name="roll" placeholder="Roll No." required=""><br><br>
-                    <input type="text" name="email" placeholder="Email Address" required=""><br><br>
-                    <input type="text" name="contact" placeholder="Contact" required=""><br><br>
+                    <input class="form-control" type="text" name="first" placeholder="First Name" required=""><br>
+                    <input class="form-control" type="text" name="last" placeholder="Last Name" required=""><br>
+                    <input class="form-control" type="text" name="username" placeholder="Username" required=""><br>
+                    <input class="form-control" type="password" name="password" placeholder="password" required=""><br>
+                    <input class="form-control" type="text" name="roll" placeholder="Roll No." required=""><br>
+                    <input class="form-control" type="text" name="email" placeholder="Email Address" required=""><br>
+                    <input class="form-control" type="text" name="contact" placeholder="Contact" required=""><br>
                     <input class="btn btn-default" type="submit" name="submit" value="Sign Up" style="color: blue; width: 70px; height: 30px"></div>
             </form>
 
@@ -106,7 +109,7 @@
     			
     		}
     		/* else if same name not found in table */
-    		if($count=0)
+    		if($count==0)
     		
     		{mysqli_query($db, "INSERT INTO student VALUES(); ('$_POST[first]', '$_POST[last]', '$_POST[username]','$_POST[password]', '$_POST[roll]', '$_POST[email]', '$_POST[contact]'  )");
     	?>

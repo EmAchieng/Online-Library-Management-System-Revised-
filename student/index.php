@@ -18,7 +18,7 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <style>
+    <style type=>
 
         div.scrollmenu {
             background-color: #333;
@@ -127,7 +127,7 @@
                     <br>
                     Email Address: &nbsp mylibrary@gmail.com <br><br>
 
-                    Mobile: &nbsp 000-000-000-000
+                    Mobile: &nbsp 000-0000-0000
                 </p>
 
             </footer>

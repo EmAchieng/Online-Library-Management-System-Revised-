@@ -18,17 +18,21 @@
 </head>
 <body>
 <nav class="navbar navbar-inverse">
-    <div class="scrollmenu">
-                <div class="nav navbar-nav">
+<div class ="container-fluid">
+    <div class="navbar-header">
+    	<a class="navbar-brand active">Library System </a>
+    </div>
+                <ul class="nav navbar-nav">
                 <li><a href="index.php">HOME</a></li>
                 <li><a href="books.php">BOOKS</a></li>
                 <li><a href="feedback.php">FEEDBACK </a></li>
-
-                <div class="nav navbar-nav navbar-right">
+				</ul>
+				
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="student_login.php"><span class="gliphicon gliphicon-log-in"> LOGIN</span></a></li>
                     <li><a href="student_login.php"><span class="gliphicon gliphicon-log-out"> LOGOUT</span></a></li>
                 	<li><a href="registration.php"><span class="gliphicon gliphicon-user">  SIGN UP</span></a></li>
-                </div>
+                </ul>
 
                 </div>
 
