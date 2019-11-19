@@ -18,7 +18,7 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <style type=>
+    <style type="text/css">
 
         div.scrollmenu {
             background-color: #333;
