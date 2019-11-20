@@ -1,5 +1,6 @@
 <?php 
 	include 'connection.php';
+	session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
@@ -8,6 +9,7 @@
     <meta name = "viewpoint" content="width-device-width", initial-scale = "1">
     <style type="text/css"></style>
     <title>Online Library System </title>
+    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel = "stylesheet" type="text/css" href="style.css"  >
     <!-- Latest compiled and minified CSS -->
@@ -49,7 +51,62 @@
                 <img src="images/pages.jpg">
                 </div>
                     <h1 style="color: navajowhite; text-align: center"> Online Library Management System</h1>
+                    <?php 
+						if(isset($_SESSION['login_user']))
+						{?>
+				<div class="scrollmenu">
+				<nav>
+                    <ul>
+                        <li>
+                            <a href="index.php">HOME</a>
+                        </li>
+                        <li>
+                            <a href="books.php">BOOKS</a>
+                        </li>
 
+                        <li>
+                            <a href="student_logout.php">LOGOUT</a>
+                        </li>
+
+                        <li>
+                            <a href="feedback.php">FEEDBACK</a>
+                        </li>
+                    </ul>
+
+                </nav>
+                </div>
+                <?php 
+							
+						}
+						else {
+							?>
+				<div class="scrollmenu">	
+				<nav>
+                    <ul>
+                        <li>
+                            <a href="index.php">HOME</a>
+                        </li>
+                        <li>
+                            <a href="books.php">BOOKS</a>
+                        </li>
+
+                        <li>
+                            <a href="student_login.php">STUDENT-LOGIN</a>
+                        </li>
+
+                        <li>
+                            <a href="feedback.php">FEEDBACK</a>
+                        </li>
+                    </ul>
+
+                </nav>
+                </div>
+							
+							<?php 
+							
+						}
+					?>
+		<!-- 
         <div class="scrollmenu">
                 <nav>
                     <ul>
@@ -71,6 +128,7 @@
 
                 </nav>
         </div>
+        -->
             </header>
             <section>
             

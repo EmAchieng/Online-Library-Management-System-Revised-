@@ -1,6 +1,7 @@
 <?php 
 	include 'connection.php';
 	include 'navbar.php';
+	
 ?>
 
 <!DOCTYPE html>
@@ -139,7 +140,7 @@
 		/*count rows inserted in the login form  */
 		$count=mysqli_num_rows($res);
 		
-		if($count==0)
+		if($count=0)
       {
         ?>
               <!--
@@ -147,13 +148,14 @@
                 alert("The username and password don't match.");
               </script> 
               -->
-          <div class="alert alert-warning" style="width: 600px; margin-left: 370px; background-color: #de1313; color: white">
+          <div class="alert alert-danger" style="width: 600px; margin-left: 370px; background-color: #de1313; color: white">
             <strong>The username and password don't match</strong>
           </div>    
         <?php
       }
       else
       {
+      	$_SESSION['login_user'] = $_POST['username'];
         ?>
           <script type="text/javascript">
             window.location="index.php"
