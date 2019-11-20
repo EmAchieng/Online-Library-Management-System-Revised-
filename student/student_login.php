@@ -124,7 +124,7 @@
             <input class="form-control" type="password" name="Password" placeholder="password" required=""><br><br>
             <input class="btn btn-default" type="submit" name="submit" value="Login" style="color: blue; width: 70px; height: 30px"> </div>
         </form>
-    <p style="color: white; padding-left: 15px">
+    <p style="color: #bf4010; padding-left: 15px">
         <br><br>
         <a style="color: #cccccc"> Forgot Password? </a> &nbsp &nbsp &nbsp &nbsp &nbsp
         New To This Site? &nbsp &nbsp &nbsp &nbsp &nbsp <a style="color:white;" href="registration.php"> Sign Up</a>

@@ -25,9 +25,9 @@
     	margin: -20px auto;
     	width: 900px;
     	height: 600px;
-    	background-color: black;
+    	background-color: green;
     	opacity: .8;
-    	color: white;
+    	color: black;
     }
     .form-control
     {

@@ -11,7 +11,7 @@
 	footer
 	{
 		height: 200px;
-		width: 1361px;
+		width: 100%;
 		background-color: black;
 	}
 		.fa
@@ -58,7 +58,7 @@
 
 </head>
 <body>
-<footer style="background-color: black; ">
+<footer style="background-color: green; ">
 	<br>
 	<h3 style="color:white;text-align: center;">Contact us via social media</h3><br>
 
@@ -77,6 +77,10 @@
 		Email:&nbsp mylibrary@gmail.com <br><br>
 		Mobile:&nbsp &nbsp 000-0000-0000
 	</p>
+	
+	
+                            <a href="index.php" style="color:green;">Go Back To The Home Page</a>
+                        
 </footer>
 </body>
 </html>

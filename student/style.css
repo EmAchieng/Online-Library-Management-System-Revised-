@@ -99,28 +99,27 @@ input, select {
 
 .wrapper {
     height: 660px;
-    width : 1350px;
-    background-color: red;
-  
+    /*width : 100%;*/
+    background-color: green;
     /*background-color: darkred;*/
 }
 
 header {
     height : 130px;
-    width: 1350px;
+    width: 100%;
     background-color: black;
     padding: 10px;
 }
 
 section {
     height : 550px;
-    width: 1361px;
-    background-color: grey;
+    width: 100%
+    background-color: black;
 
 }
 footer {
-    height : 82px;
-    width: 1361px;
+    height : 500px;
+    width: 100%
     background-color: black;
 }
 .logo
@@ -128,6 +127,8 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 
 }
 .logo image {
@@ -156,10 +157,10 @@ section .sec_img {
 .box {
     height : 400px;
     width: 450px;
-    background-color: lightgrey;
+    background-color: green;
     margin: 70px auto;
     opacity: .6;
-    color: white;
+    color: red;
 
 }
 .box h1 {
@@ -173,7 +174,7 @@ section .sec_img {
 .box1 {
     height: 450px;
     width: 450px;
-    background-color: black;
+    background-color: green;
     margin: 70px auto;
     opacity: .7;
     color: white;
@@ -220,7 +221,7 @@ input {
 .box2 {
     height: 589px;
     width: 400px;
-    background-color: black;
+    background-color: green;
     margin: 0px auto;
     opacity: .7;
     color: white;

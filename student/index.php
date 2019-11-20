@@ -23,9 +23,10 @@
     <style type="text/css">
 
         div.scrollmenu {
-            background-color: #333;
+            background-color: black;
             overflow: auto;
             white-space: nowrap;
+            
         }
 
         div.scrollmenu a {
@@ -45,7 +46,7 @@
 	
 
 
-        <div class = "wrapper">
+        <div class = "wrapper" style="width: 1500px; background-color: green">
             <header>
                 <div class="logo">
                 <img src="images/pages.jpg">
@@ -70,6 +71,10 @@
 
                         <li>
                             <a href="feedback.php">FEEDBACK</a>
+                        </li>
+                        
+                        <li>
+                            <a href="footer.php">CONTACT US</a>
                         </li>
                     </ul>
 
@@ -96,6 +101,10 @@
 
                         <li>
                             <a href="feedback.php">FEEDBACK</a>
+                        </li>
+                        
+                        <li>
+                            <a href="footer.php">CONTACT US</a>
                         </li>
                     </ul>
 
@@ -181,12 +190,14 @@
 
 
             <footer>
-                <p style="color: white; text-align: center; ">
+                <p style="color: #bf4010; text-align: center; ">
                     <br>
                     Email Address: &nbsp mylibrary@gmail.com <br><br>
 
                     Mobile: &nbsp 000-0000-0000
                 </p>
+                
+                
 
             </footer>
                 </div>
